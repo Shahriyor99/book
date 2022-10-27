@@ -1,0 +1,221 @@
+import 'package:book/listlar_class_darsliklar/5-sinf_darsliklar.dart';
+import 'package:flutter/material.dart';
+
+import '../classes/maktab_darsliklari.dart';
+
+class MaktabDarsliklariPage extends StatefulWidget {
+  const MaktabDarsliklariPage({Key? key}) : super(key: key);
+  static final String id="MaktabDarsliklariPage";
+
+  @override
+  State<MaktabDarsliklariPage> createState() => _MaktabDarsliklariPageState();
+}
+
+class _MaktabDarsliklariPageState extends State<MaktabDarsliklariPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Column(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height/10,
+              child: Center(
+                child: Text("Maktab darsliklari", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.black),),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListView(
+                      children:[
+                            ListView.builder(
+                                  itemCount: Beshinchi().length,
+                                  itemBuilder: (BuildContext context,int index){
+                                        return Beshinchi()[index];
+                                  },
+                                  scrollDirection: Axis.vertical,
+                                  reverse: true,
+                            ),
+                            //#5-sinf darsliklari
+                            MaktabDarsliklari("5","Adabiyot", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Biologiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5", "Fransuz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5", "Fransuz tili", "(daftar)","assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5", "Fransuz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Geografiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Ingliz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Ingliz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Informatika va", "axborot texnologiyalari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Jismoniy", "tarbiya", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Matematika", "1-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Matematika", "2-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Matematika", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Musiqa", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Nemis tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Nemis tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Ona tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Rus tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Tarixdan", "hikoyalar", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Tasviriy", "san'at", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Texnologiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("5","Vatan", "tuyg'usi", "assets/images/math_book.jpg"),
+
+                            //#6-sinf darsliklari
+                            MaktabDarsliklari("6","Adabiyot", "1-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Adabiyot", "2-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Botanika", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Fizika", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Fizika", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6", "Fransuz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6", "Fransuz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Geografiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Ingliz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Ingliz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Informatika va", "axborot texnologiyalari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Matematika", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Matematika", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Musiqa", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Nemis tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Ona tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Qadimgi dunyo", "tarixi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Rus tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Tasviriy", "san'at", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Texnologiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("6","Vatan", "tuyg'usi", "assets/images/math_book.jpg"),
+
+                            //#7-sinf darsliklari
+                            MaktabDarsliklari("7","Adabiyot", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Algebra", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Algebra", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Fizika", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Fizika", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Fransuz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Geografiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Geometriya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Ingliz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Ingliz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Informatika va", "axborot texnologiyalari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Jahon tarixi", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Jismoniy", "tarbiya", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Kimyo", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Milliy istiqlol g'oyasi", "va ma'naviyat asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Musiqa", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Nemis tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Nemis tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Ona tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","O'zbekiston", "tarixi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Rus tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Tasviriy", "san'at", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Texnologiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("7","Zoologiya", "", "assets/images/math_book.jpg"),
+
+                            //#8-sinf darsliklari
+                            MaktabDarsliklari("8","Adabiyot", "1-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Adabiyot", "2-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Algebra", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Algebra", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Chizmachilik", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Fizika", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Fizika", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Fransuz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Fransuz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Geometriya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Ingliz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Ingliz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Informatika va hisob-", "lash texnikasi asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Iqtisodiy", "bilim asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Jahon tarixi", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Jismoniy", "tarbiya", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Kimyo", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Milliy istiqlol g'oyasi", "va ma'naviyat asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Nemis tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Nemis tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Odam va", "uning salomatligi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Ona tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","O'zbekiston davlati", "va huquqi asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","O'zbekiston iqtisodiyo-", "ti va ijtimoiy geografiyasi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","O'zbekiston", "tarixi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("8","Rus tili", "", "assets/images/math_book.jpg"),
+
+                            //#9-sinf darsliklari
+                            MaktabDarsliklari("9","Adabiyot", "1-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Adabiyot", "2-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Algebra", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Algebra", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Chizmachilik", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Fizika", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Fizika", "(AFIDUM)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Fransuz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Fransuz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Geometriya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Ingliz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Ingliz tili", "(metodika)", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Informatika va hisob-", "lash texnikasi asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Iqtisodiy", "bilim asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Jahon ijtimoiy-", "iqtisodiy geografiyasi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Jahon tarixi", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Kimyo", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Konstitutsiyaviy", "huquq asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Milliy istiqlol g'oyasi", "va ma'naviyat asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Nemis tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Ona tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","O'zbekiston", "tarixi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Rus tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("9","Sitologiya va", "genetika asoslari", "assets/images/math_book.jpg"),
+
+                            //#10-sinf darsliklari
+                            MaktabDarsliklari("10","Adabiyot", "1-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Adabiyot", "2-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Biologiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Chaqiruvga qadar", "boshlang'ich tayyorgarlik", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Davlat va", "huquq asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Dunyo dinlari", "tarixi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Fizika", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Fransuz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Geografiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Ingliz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Informatika va", "axborot texnologiyalari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Jahon tarixi", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Matematika", "1-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Matematika", "2-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Ma'naviyat", "asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Nemis tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Ona tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Organik", "kimyo", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","O'zbekiston", "tarixi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("10","Rus tili", "", "assets/images/math_book.jpg"),
+
+                            //#11-sinf darsliklari
+                            MaktabDarsliklari("11","Adabiyot", "1-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Adabiyot", "2-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Astronomiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Biologiya", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Chaqiruvga qadar", "boshlang'ich tayyorgarlik", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Davlat va", "huquq asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Dunyo dinlari", "tarixi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Fizika", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Fransuz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Ingliz tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Informatika va", "axborot texnologiyalari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Jahon tarixi", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Matematika", "1-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Matematika", "2-qism", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Ma'naviyat", "asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Nemis tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Ona tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","O'zbekiston", "tarixi", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Rus tili", "", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Tadbirkorlik", "asoslari", "assets/images/math_book.jpg"),
+                            MaktabDarsliklari("11","Umumiy kimyo", "", "assets/images/math_book.jpg"),
+                      ],
+
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
